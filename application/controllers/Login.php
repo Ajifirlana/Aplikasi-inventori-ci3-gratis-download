@@ -32,14 +32,14 @@ class Login extends CI_Controller{
 		
 		if($get_petugas){
 			if($get_petugas->password == $this->input->post('password')){
-				$session = (
+				$session = [
 					'kode' => $get_petugas->kode,
 					'nama' => $get_petugas->nama,
 					'username' => $get_petugas->username,
 					'password' => $get_petugas->password,
 					'role' => $this->input->post('role'),
 					'jam_masuk' => date('H:i:s')
-				);
+				];
 
 				$this->session->set_userdata('login', $session);
 				$this->session->set_flashdata('success', '<strong>Login</strong> Berhasil!');
