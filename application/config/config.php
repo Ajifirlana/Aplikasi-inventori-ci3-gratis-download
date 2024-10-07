@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci-inventori/';
+$config['base_url'] = 'http://aplikasi-inventori-ci3-gratis-download.test/';
 
 /*
 |--------------------------------------------------------------------------
